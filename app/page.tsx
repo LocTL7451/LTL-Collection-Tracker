@@ -46,7 +46,7 @@ export default function Page() {
 						<div>
 							<Fade triggerOnce delay={300}>
 								<h1 className="text-zinc-200  text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold">
-									Heya! I'm LTL :)
+									{"Heya! I'm LTL :)"}
 								</h1>
 							</Fade>
 							<div>
