@@ -11,8 +11,8 @@ function Navbar() {
   return (
     <>
       <nav
-        className={`bg-zinc-950 bg-opacity-30 h-[6rem] sticky top-0 left-0 right-0 grid grid-cols-4 text-zinc-200 z-40 ${
-          sideBarOpen ? "opacity-0 " : ""
+        className={`z-50 bg-zinc-950 bg-opacity-30 h-[6rem] sticky top-0 left-0 right-0 grid grid-cols-4 text-zinc-200 z-40 ${
+          sideBarOpen ? " " : ""
         }`}
       >
         <Link
@@ -51,7 +51,7 @@ function Navbar() {
             })}
           </div>
         </Link>
-        <div className="hidden col-span-3 md:flex items-center justify-end space-x-4 lg:space-x-6 mr-[4rem] font-semibold text-lg">
+        <div className="hidden col-span-3 gap-5 md:flex items-center justify-end space-x-4 lg:space-x-6 mr-[4rem] font-semibold text-lg">
           <Link
             className="hover:scale-[1.2] text-zinc-400 hover:text-zinc-300 transition-all group"
             href={"/"}
@@ -65,15 +65,24 @@ function Navbar() {
 
           <Link
             className="hover:scale-[1.2] text-zinc-400 hover:text-zinc-300 transition-all group"
-            href={"/projects"}
+            href={"/tools"}
           >
-            <p>PROJECTS</p>
+            <p>TOOLS</p>
             <div className="grid-cols-2 grid">
               <div className="border-b-2 border-b-zinc-600 dark:border-b-zinc-200 origin-left scale-0 group-hover:scale-100 transition-all duration-300"></div>
               <div className="border-b-2 border-b-zinc-600 dark:border-b-zinc-200 origin-right scale-0 group-hover:scale-100 transition-all duration-300"></div>
             </div>
           </Link>
-
+          <Link
+            className="hover:scale-[1.2] text-zinc-400 hover:text-zinc-300 transition-all group"
+            href={"/about"}
+          >
+            <p>ABOUT</p>
+            <div className="grid-cols-2 grid">
+              <div className="border-b-2 border-b-zinc-600 dark:border-b-zinc-200 origin-left scale-0 group-hover:scale-100 transition-all duration-300"></div>
+              <div className="border-b-2 border-b-zinc-600 dark:border-b-zinc-200 origin-right scale-0 group-hover:scale-100 transition-all duration-300"></div>
+            </div>
+          </Link>
           <Link
             className=" hover:scale-[1.2] text-zinc-400 hover:text-zinc-300 transition-all group"
             href={"/contact"}
