@@ -146,7 +146,7 @@ export default function Page() {
 							</span>
 						</h2>
 						<p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-							Check out all of the TCG I've built to support my fellow collectors.
+							{"Check out all of the TCG I've built to support my fellow collectors."}
 						</p>
 					</a>
 					<a
@@ -162,7 +162,7 @@ export default function Page() {
 							</span>
 						</h2>
 						<p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-							Learn a bit more about myself and my passion for collectables.
+							{"Learn a bit more about myself and my passion for collectables."}
 						</p>
 					</a>
 					<a
@@ -178,7 +178,7 @@ export default function Page() {
 							</span>
 						</h2>
 						<p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-							Got questions/suggestions/issues? Reach out to me here.
+							{"Got questions/suggestions/issues? Reach out to me here."}
 						</p>
 					</a>
 					<a
@@ -194,7 +194,7 @@ export default function Page() {
 							</span>
 						</h2>
 						<p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-							Check out the jank source code for this site here!
+							{"Check out the jank source code for this site here!"}
 						</p>
 					</a>
 				</div>
