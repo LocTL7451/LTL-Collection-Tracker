@@ -4,7 +4,6 @@ import React from "react";
 import { Bars3BottomLeftIcon } from "@heroicons/react/24/outline";
 import { useState } from "react";
 import TopBar from "./navbar.component";
-const LTL = "../media/LTL.png";
 function Navbar() {
   const [sideBarOpen, setSideBarOpen] = useState<boolean>(false);
 

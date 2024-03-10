@@ -1,8 +1,8 @@
 import AnimatedHorizontalPage from "../components/horizontal.page.component";
 import React from "react";
 export const metadata = {
-  title: "LTL - Contact",
-  description: "Contact",
+  title: "LTL - About",
+  description: "About Page",
 };
 
 function Layout({ children }: { children: React.ReactNode }) {

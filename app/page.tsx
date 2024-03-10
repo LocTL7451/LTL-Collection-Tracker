@@ -4,6 +4,7 @@ import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import Tilt from "react-parallax-tilt";
 import { Fade, Slide } from "react-awesome-reveal";
 import React from "react";
+import Link from "next/link";
 
 import Typed from "typed.js";
 import AnimatedHorizontalPage from "./components/horizontal.page.component";
@@ -41,7 +42,7 @@ export default function Page() {
 		<div className="flex max-h-screen flex-col items-center justify-between p-24 overflow-hidden	">
 			<AnimatedHorizontalPage>
 				{/*Dynamic Section*/}
-				<div className="w-full h-[20rem] p-4 m-4 md:grid md:grid-cols-2 md:grid-rows-2">
+				<div className="w-full h-[20rem] p-4 m-4 md:grid md:grid-cols-2 md:grid-rows-2 ">
 					<div className=" items-center flex justify-center md:justify-end">
 						<div>
 							<Fade triggerOnce delay={300}>
@@ -79,7 +80,7 @@ export default function Page() {
 					<div className="flex justify-center items-start row-span-2   relative">
 						<Fade
 							triggerOnce
-							className="absolute bottom-0 hidden md:block sm:w-[150px] md:w-[350px] lg:w-[400px] xl:w-[500px] "
+							className="absolute bottom-0 hidden md:block sm:w-[150px] md:w-[200px] lg:w-[300px] xl:w-[300px] "
 						>
 							<Tilt
 								reset={false}
@@ -88,7 +89,7 @@ export default function Page() {
 								tiltReverse={true}
 								tiltMaxAngleY={10}
 							>
-								<div className="flex flex-row gap-2">
+								<div className="flex flex-row gap-2 sm:max-w-[50px] md:max-w-[200px] lg:max-w-[200px] xl:max-w-[200px]">
 									<img src={cardImageAngelKu} alt="Angel Goku Image" />
 									<img src={cardImageGogeta} alt="Gogeta Image" />
 									<img src={cardImageThreeKu} alt="SS3 Goku Image" />
@@ -126,37 +127,34 @@ export default function Page() {
 						</Fade>
 					</div>
 				</div>
-
-				{/*Bottom Nav Area*/}
-				<div
+			</AnimatedHorizontalPage>
+		{/*Bottom Nav Area*/}
+		<div
 					id="Description"
-					className="flex flex-row justify-center items-center h-[40rem] "
+					className="grid grid-cols-4 py-[10rem] gap-4 justify-center items-center h-[20rem] max-h-[20rem] "
 				>
-					{" "}
-					<a
-						href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-						className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-500 hover:bg-gray-700 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-						target="_blank"
-						rel="noopener noreferrer"
+					<Link
+						href={"/"}
+						className="xs:h-[20rem] sm:h-[20rem] md:h-[10rem] rounded-lg flex-col col-span-1 border border-transparent px-5 py-4 transition-colors hover:border-gray-500 hover:bg-gray-700 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
 					>
-						<h2 className={`mb-3 text-2xl font-semibold`}>
+						<h2 className={`mb-3 text-2xl sm:text-xl font-semibold`}>
 							Tools
 							<span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
 								-&gt;
 							</span>
 						</h2>
 						<p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-							{"Check out all of the TCG I've built to support my fellow collectors."}
+							{
+								"Check out all of the TCG I've built to support my fellow collectors."
+							}
 						</p>
-					</a>
-					<a
-						href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-						className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-500 hover:bg-gray-700 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-						target="_blank"
-						rel="noopener noreferrer"
+					</Link>
+					<Link
+						href={"/about"}
+						className="xs:h-[20rem] sm:h-[20rem] md:h-[10rem] rounded-lg border col-span-1 border-transparent px-5 py-4 transition-colors hover:border-gray-500 hover:bg-gray-700 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
 					>
-						<h2 className={`mb-3 text-2xl font-semibold`}>
-              About
+						<h2 className={`mb-3 text-2xl sm:text-xl font-semibold`}>
+							About
 							<span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
 								-&gt;
 							</span>
@@ -164,30 +162,26 @@ export default function Page() {
 						<p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
 							{"Learn a bit more about myself and my passion for collectables."}
 						</p>
-					</a>
-					<a
-						href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-						className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-500 hover:bg-gray-700 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-						target="_blank"
-						rel="noopener noreferrer"
+					</Link>
+					<Link
+						href={"/contact"}
+						className="xs:h-[20rem] sm:h-[20rem] md:h-[10rem] rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-500 hover:bg-gray-700 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
 					>
-						<h2 className={`mb-3 text-2xl font-semibold`}>
+						<h2 className={`mb-3 text-2xl sm:text-xl font-semibold`}>
 							Contact
 							<span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
 								-&gt;
 							</span>
 						</h2>
 						<p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-							{"Got questions/suggestions/issues? Reach out to me here."}
+							{"Got questions, suggestions or issues? Reach out to me here."}
 						</p>
-					</a>
-					<a
-						href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-						className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-500 hover:bg-gray-700 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-						target="_blank"
-						rel="noopener noreferrer"
+					</Link>
+					<Link
+						href="https://github.com/LocTL7451/LTL-Collection-Tracker"
+						className="xs:h-[20rem] sm:h-[20rem] md:h-[10rem] rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-500 hover:bg-gray-700 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
 					>
-						<h2 className={`mb-3 text-2xl font-semibold`}>
+						<h2 className={`mb-3 text-2xl sm:text-xl font-semibold`}>
 							Source Code
 							<span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
 								-&gt;
@@ -196,9 +190,8 @@ export default function Page() {
 						<p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
 							{"Check out the jank source code for this site here!"}
 						</p>
-					</a>
+					</Link>
 				</div>
-			</AnimatedHorizontalPage>
 		</div>
 	);
 }
